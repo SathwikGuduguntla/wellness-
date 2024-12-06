@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient-Trainer Dashboard</title>
+    <link rel="stylesheet" href="dask.css">
+</head>
+<body>
+    <header>
+        <h1>Patient-Trainer Dashboard</h1>
+    </header>
+
+    <section class="dashboard-container">
+        <!-- Video Call Section -->
+        <div class="video-call-section">
+            <h2>Video Call</h2>
+            <div class="video-container">
+                <video id="patient-video" autoplay muted></video>
+                <video id="trainer-video" autoplay></video>
+            </div>
+            <button id="start-call-btn">Start Call</button>
+            <button id="end-call-btn" style="display: none;">End Call</button>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <h2>Chat</h2>
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Type your message..." />
+        
+        </form>
+    </section>
+
+</body>
+</html>

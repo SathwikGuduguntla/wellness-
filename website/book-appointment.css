@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('img/hand-massage-7440712.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.appointment-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.appointment-form textarea {
+    resize: vertical;
+}
+
+.appointment-form label {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Style the payment section */
+.payment-section {
+    margin-top: 20px;
+}
+
+/* Label for payment method */
+.payment-section label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Custom select dropdown */
+.payment-section select {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown option styles */
+.payment-section select option {
+    padding: 10px;
+}
+
+/* Different colors for each payment option */
+.payment-section select option[value="credit-card"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.payment-section select option[value="paypal"] {
+    background-color: #0070BA; /* PayPal Blue */
+    color: white;
+}
+
+.payment-section select option[value="bank-transfer"] {
+    background-color: #FFB000; /* Bank Transfer Yellow */
+    color: white;
+}
+
+/* Hover effects for the dropdown */
+.payment-section select:hover {
+    background-color: #e0e0e0;
+}
+
+/* Option hover effects */
+.payment-section select option:hover {
+    background-color: #cccccc;
+}
+
+.btn.book-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.book-btn:hover {
+    background-color: #218838;
+}
+
+/* Video Call Info Section */
+.video-call-info {
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.video-call-info h3 {
+    margin-bottom: 10px;
+}
+
+.video-call-info p {
+    font-size: 1rem;
+}

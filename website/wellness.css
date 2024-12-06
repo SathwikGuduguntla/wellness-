@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, rgba(76, 175, 80, 0.7), rgba(129, 199, 132, 0.7)), 
+              url('img/hand-massage-7440712.jpg') no-repeat center center/cover; /* Green overlay + background image */
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #add8e6; /* Light blue */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Dancing Script', cursive; /* Apply your chosen font */
+}
+
+
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+  animation: pulse 5s infinite;
+}
+
+.hero-content {
+  z-index: 1;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-family: 'Lora',cursive;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #2e7d32; /* Dark green button */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* About Wellness Section */
+/* About Wellness Section */
+.about-wellness {
+  background: url('img/satisfaction-7196038.jpg') no-repeat center center/cover; /* Background image */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 800px; /* Limiting the section width */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: relative; /* To allow overlaying text */
+}
+
+/* Hover effect for the section */
+.about-wellness:hover {
+  transform: translateY(-10px); /* Lifts the section on hover */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Heading style */
+.about-wellness h2 {
+  font-size: 2.5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Make the title all caps */
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Adds shadow to text */
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Paragraph style */
+/* About Wellness Section */
+/* About Wellness Section Paragraph */
+.about-wellness p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-family: 'Lora', serif;
+  margin-top: 10px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.5px;
+  color: #b39ddb; /* Light violet color */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+
+  font-family: 'Lora',cursive;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-wellness h2 {
+    font-size: 2em; /* Slightly smaller on smaller screens */
+  }
+
+  .about-wellness p {
+    font-size: 1.1em; /* Adjust font size for mobile */
+  }
+}
+
+
+/* Benefits Section */
+/* Benefits Section */
+.benefits {
+  background: url('img/hand-massage-7440712.jpg') no-repeat center center/cover; /* Background image */
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.benefits h2 {
+  font-size: 2.5em;
+  font-family: 'Poppins', sans-serif;
+  color: #388e3c;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Dancing Script', cursive; /* Apply your chosen font */
+}
+
+/* Container for Benefit Items */
+.benefits-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid */
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Benefit Items */
+.benefit-item {
+  background-color: #ffffff; /* White background for items */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Benefit Item Hover Effect */
+.benefit-item:hover {
+  transform: translateY(-10px); /* Lift the item on hover */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Benefit Image */
+.benefit-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Benefit Text */
+.benefit-item p {
+  font-size: 1.1em;
+  font-family: 'Lora', serif;
+  color: #388e3c; /* Green text for consistency */
+  margin-top: 15px;
+  font-weight: 500;
+  text-transform: capitalize; /* Capitalize the text */
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefits h2 {
+    font-size: 2em; /* Slightly smaller on mobile */
+  }
+  .benefit-item p {
+    font-size: 1em; /* Smaller text for mobile */
+  }
+}
+
+
+/* Trainers Section */
+/* Trainers Section */
+.trainers {
+  background: linear-gradient(135deg, #66bb6a, #388e3c); /* Green gradient background */
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 900px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+}
+
+/* Heading Style */
+.trainers h2 {
+  font-size: 2.8em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+  font-family: 'Dancing Script', cursive; /* Apply your chosen font */
+}
+
+/* Paragraph Style */
+.trainers p {
+  font-size: 1.2em;
+  font-family: 'Lora', serif;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for readability */
+  font-family: 'lora', cursive; /* Apply your chosen font */
+
+}
+
+/* Button Styling */
+.trainers .btn {
+  background-color: #ffffff;
+  color: #388e3c; /* Green text */
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.trainers .btn:hover {
+  background-color: #388e3c;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trainers h2 {
+    font-size: 2.2em; /* Slightly smaller on mobile */
+  }
+
+  .trainers p {
+    font-size: 1.1em; /* Smaller text on mobile */
+  }
+
+  .trainers .btn {
+    padding: 12px 25px; /* Adjust button size on mobile */
+    font-size: 1.1em; /* Smaller font size for the button */
+  }
+}
+/* Footer Style */
+footer {
+  background-color: #388e3c; /* Green background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Footer Text */
+footer p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+/* Footer Hover Effect */
+footer p:hover {
+  color: #66bb6a; /* Lighter green color on hover */
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.9em; /* Slightly smaller font size on mobile */
+  }
+}

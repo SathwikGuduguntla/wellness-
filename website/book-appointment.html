@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+    <section class="appointment-section">
+        <h2>Book Your Appointment</h2>
+        <p>Please provide details about your health condition so we can match you with the right trainer.</p>
+
+        <!-- Appointment Form -->
+        <form action="submit_appointment.php" method="POST" class="appointment-form">
+            <label for="patient-name">Full Name</label>
+            <input type="text" id="patient-name" name="patient-name" required placeholder="Enter your name">
+
+            <label for="patient-email">Email Address</label>
+            <input type="email" id="patient-email" name="patient-email" required placeholder="Enter your email">
+
+            <label for="patient-phone">Phone Number</label>
+            <input type="tel" id="patient-phone" name="patient-phone" required placeholder="Enter your phone number">
+
+            <label for="patient-issues">Describe Your Health Issues</label>
+            <textarea id="patient-issues" name="patient-issues" rows="5" required placeholder="Describe your health issues, pain, or stress"></textarea>
+
+            <label for="video-call">Would you like to schedule a Video Call?</label>
+            <select id="video-call" name="video-call">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <!-- Payment Section -->
+            <div class="payment-section">
+                <label for="payment-method">Choose a Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn book-btn">Book Appointment</button>
+        </form>
+    </section>
+
+</body>
+</html>

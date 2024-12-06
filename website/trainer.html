@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Dashboard</title>
+    <link rel="stylesheet" href="trainer.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Trainer's Dashboard</h1>
+
+        <!-- Patient Details Section -->
+        <section class="patient-details">
+            <h2>Patient Information</h2>
+            <div class="patient-info">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Age:</strong> 28</p>
+                <p><strong>Condition:</strong> Anxiety</p>
+                <p><strong>Appointment:</strong> 2024-12-05</p>
+            </div>
+        </section>
+
+        <!-- Video Call Section -->
+        <section class="video-call-section">
+            <h2>Video Call</h2>
+            <div class="video-container">
+                <video id="trainer-video" autoplay muted></video>
+                <video id="patient-video" autoplay></video>
+            </div>
+            <button id="start-call-btn" class="animated-btn">Start Call</button>
+            <button id="end-call-btn" class="animated-btn" style="display: none;">End Call</button>
+        </section>
+
+        <!-- Chat Section -->
+        <section class="chat-section">
+            <h2>Chat</h2>
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Type your message..." />
+            <button id="send-chat-btn" class="animated-btn">Send</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
